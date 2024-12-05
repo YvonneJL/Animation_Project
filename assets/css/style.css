@@ -1,0 +1,288 @@
+@font-face {
+    font-family: Roboto_Bold;
+    src: url("../font/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto_Regular;
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: Roboto_Regular;
+}
+
+h1, h2, h3, h4 {
+    font-family: Roboto_Bold;
+}
+
+
+p {
+    font-size: 1.4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* !header */
+
+header {
+    height: 100vh;
+    margin-bottom: 15vh;
+}
+
+.first {
+    position: relative;
+}
+
+.animation {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.falling-guy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: falling 3s 1s ease-in-out infinite alternate;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }   
+}
+
+.thedesignproject {
+    position: absolute;
+    top: 6vh;
+    left: 6vw;
+    display: flex;
+    gap: 20px;
+}
+
+.thedesignproject h3 {
+    padding-bottom: 0.5rem;
+    font-size: 2.4rem;
+}
+
+.elephant {
+    width: 3vw;
+    position: fixed;
+    left: 2vw;
+    top: 3vw;
+}
+
+.mainpartheader {
+    width: 35%;
+    position: absolute;
+    top: 58vh;
+    left: 10.5vw;
+}
+
+.first h1 {
+    font-size: 5.4rem;
+    padding-bottom: 2rem;
+}
+
+.rocket-p {
+    display: inline-block;
+    margin-bottom: 5rem;
+    line-height: 2rem;
+    font-size: 1.8rem;
+}
+
+.scroll {
+    font-size: 1.4rem;
+    color: #FF3571;
+    font-family: Roboto_Bold;
+}
+
+/* !Main */
+
+.pictures {
+    margin-bottom: 40vh;
+}
+
+
+.idea {
+   display: flex; 
+   justify-content: space-between;
+   margin-bottom: 20vh;
+}
+
+.lightbulb {
+    font-size: 3.8rem;
+    width: 30%;
+    padding-left: 10vw;
+}
+
+.idea p{
+    width: 55%;
+    padding-right: 20vw;
+    line-height: 3rem;
+    font-size: 1.8rem;
+}
+
+.challenge {
+    font-size: 3.8rem;
+    width: 70%;
+    padding-left: 15vw;
+    margin-bottom: 30vh;
+}
+
+.learnings {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-right: 23vw;
+    margin-bottom: 40vh;
+}
+
+.flex {
+    display: flex;
+    gap: 2.5rem;
+    width: 30%;
+    margin-left: 10vw;
+}
+
+.learnings img {
+    width: 3vw;
+    height: 5vh;
+}
+
+.learnings h4 {
+    font-size: 1.9rem;
+    padding-bottom: 1rem;
+}
+
+.learnings p {
+    width: 80%;
+    line-height: 3rem;
+}
+
+.ready {
+    margin-bottom: 20vh;
+}
+
+.ready article:first-child {
+    text-align: center;
+}
+
+.ready article:first-child h2{
+    font-size: 2.8rem;
+    padding-bottom: 25px;
+}
+
+    .ready article:first-child p {
+    width: 65vw;
+    padding-left: 35vw;
+    line-height: 2rem;
+    padding-bottom: 15vw;
+} 
+
+.steps-with-pics {
+    display: flex;
+    gap: 200px;
+    margin-left: 144px;
+    margin-bottom: 15vw;
+}
+
+.steps-with-pics img {
+    width: 30%;
+}
+
+.steps {
+    width: 50%;
+}
+
+.steps h2 {
+    font-size: 5.2rem;
+    color: #DDDDDD;
+    padding-bottom: 6vh;
+}
+
+.steps h4 {
+    font-size: 1.9rem;
+    padding-bottom: 3vh;
+}
+
+.steps img {
+    width: 3vw;
+    padding-bottom: 3vh;
+}
+
+.steps p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+
+/* !footer */
+
+footer article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 2.8rem;
+    padding-bottom: 25px;
+}
+
+footer article p{
+    font-size: 1.4rem;
+    padding-bottom: 50px;
+}
+
+footer input {
+    padding: 2.5rem 15vw;
+    display: block;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+footer input::placeholder {
+    font-size: 2rem;
+    width: 30vw;
+}
+
+footer button {
+    padding: 2rem 5vw;
+    display: block;
+    margin-bottom: 3rem;
+    background-color: #FF3571;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    background: linear-gradient(90deg, #3f51b5, transparent) #FF3571;
+}
+
+footer > p {
+    padding-left: 130px;
+    font-size: 1.4rem;
+}
+
+
